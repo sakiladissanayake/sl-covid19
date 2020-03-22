@@ -11,34 +11,34 @@
             <!-- Cases -->
             <div class="c-class">
                 <div class="inner-class">
-                    <img src="/assets/images/cases.png" style="height: 45px; padding: 0px 1rem;">
+                    <img src="./assets/images/cases.png" style="height: 45px; padding: 0px 1rem;">
                     <h1 style="font-size: 33px;">Cases</h1>
                     <p class="p-new-count">+{{ data.data.local_new_cases }}</p>
                 </div>
-                <p class="p-total-count">{{ data.data.local_total_cases }}</p>
+                <p class="p-total-count" [countUp]="data.data.local_total_cases">0</p>
             </div>    
 
             <!-- Deaths -->
             <div class="d-class">
                 <div class="inner-class">
-                    <img src="/assets/images/death.png" style="height: 45px; padding: 0px 1rem;">
+                    <img src="./assets/images/death.png" style="height: 45px; padding: 0px 1rem;">
                     <h1 style="font-size: 33px;">Deaths</h1>
                     <p class="p-new-count">+{{ data.data.local_new_deaths }}</p>
                 </div>
-                <p class="p-total-count">{{ data.data.local_deaths }}</p>
+                <p class="p-total-count" [countUp]="data.data.local_deaths">0</p>
             </div> 
 
             <!-- Rcovered -->
             <div class="r-class">
                 <div class="inner-class">
-                    <img src="/assets/images/recover.png" style="height: 45px; padding: 0px 1rem;">
+                    <img src="./assets/images/recover.png" style="height: 45px; padding: 0px 1rem;">
                     <h1 style="font-size: 33px;">Recovered</h1>
                     <p class="p-new-count"></p>
                 </div>
-                <p class="p-total-count">{{ data.data.local_recovered }}</p>
+                <p class="p-total-count" [countUp]="data.data.local_recovered">0</p>
             </div>   
           </div>  
-          
+
         <!-- World Status -->
         <h5 class="section-title h1" style="color: white; text-align: center;
         padding: 0px 1rem; padding-top: 15px;">COVID19 STATUS - GLOBAL</h5>
@@ -47,31 +47,31 @@
             <!-- Cases -->
             <div class="c-class">
                 <div class="inner-class">
-                    <img src="/assets/images/cases.png" style="height: 45px; padding: 0px 1rem;">
+                    <img src="./assets/images/cases.png" style="height: 45px; padding: 0px 1rem;">
                     <h1 style="font-size: 33px;">Cases</h1>
                     <p class="p-new-count">+{{ data.data.global_new_cases }}</p>
                 </div>
-                <p class="p-total-count">{{ data.data.global_total_cases }}</p>
+                <p class="p-total-count" [countUp]="data.data.global_total_cases">0</p>
             </div>    
 
             <!-- Deaths -->
             <div class="d-class">
                 <div class="inner-class">
-                    <img src="/assets/images/death.png" style="height: 45px; padding: 0px 1rem;">
+                    <img src="./assets/images/death.png" style="height: 45px; padding: 0px 1rem;">
                     <h1 style="font-size: 33px;">Deaths</h1>
                     <p class="p-new-count">+{{ data.data.global_new_deaths }}</p>
                 </div>
-                <p class="p-total-count">{{ data.data.global_deaths }}</p>
+                <p class="p-total-count" [countUp]="data.data.global_deaths">0</p>
             </div> 
 
             <!-- Rcovered -->
             <div class="r-class">
                 <div class="inner-class">
-                    <img src="/assets/images/recover.png" style="height: 45px; padding: 0px 1rem;">
+                    <img src="./assets/images/recover.png" style="height: 45px; padding: 0px 1rem;">
                     <h1 style="font-size: 33px;">Recovered</h1>
                     <p class="p-new-count"></p>
                 </div>
-                <p class="p-total-count">{{ data.data.global_recovered }}</p>
+                <p class="p-total-count" [countUp]="data.data.global_recovered">0</p>
             </div>   
           </div>
 
