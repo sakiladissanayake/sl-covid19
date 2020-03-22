@@ -15,7 +15,7 @@
                     <h1 style="font-size: 33px;">Cases</h1>
                     <p class="p-new-count">+{{ data.data.local_new_cases }}</p>
                 </div>
-                <p class="p-total-count">{{ data.data.local_total_cases }}</p>
+                <p class="p-total-count" [countUp]="data.data.local_total_cases">0</p>
             </div>    
 
             <!-- Deaths -->
@@ -25,7 +25,7 @@
                     <h1 style="font-size: 33px;">Deaths</h1>
                     <p class="p-new-count">+{{ data.data.local_new_deaths }}</p>
                 </div>
-                <p class="p-total-count">{{ data.data.local_deaths }}</p>
+                <p class="p-total-count" [countUp]="data.data.local_deaths">0</p>
             </div> 
 
             <!-- Rcovered -->
@@ -35,7 +35,7 @@
                     <h1 style="font-size: 33px;">Recovered</h1>
                     <p class="p-new-count"></p>
                 </div>
-                <p class="p-total-count">{{ data.data.local_recovered }}</p>
+                <p class="p-total-count" [countUp]="data.data.local_recovered">0</p>
             </div>   
           </div>  
 
@@ -51,7 +51,7 @@
                     <h1 style="font-size: 33px;">Cases</h1>
                     <p class="p-new-count">+{{ data.data.global_new_cases }}</p>
                 </div>
-                <p class="p-total-count">{{ data.data.global_total_cases }}</p>
+                <p class="p-total-count" [countUp]="data.data.global_total_cases">0</p>
             </div>    
 
             <!-- Deaths -->
@@ -61,7 +61,7 @@
                     <h1 style="font-size: 33px;">Deaths</h1>
                     <p class="p-new-count">+{{ data.data.global_new_deaths }}</p>
                 </div>
-                <p class="p-total-count">{{ data.data.global_deaths }}</p>
+                <p class="p-total-count" [countUp]="data.data.global_deaths">0</p>
             </div> 
 
             <!-- Rcovered -->
@@ -71,7 +71,7 @@
                     <h1 style="font-size: 33px;">Recovered</h1>
                     <p class="p-new-count"></p>
                 </div>
-                <p class="p-total-count">{{ data.data.global_recovered }}</p>
+                <p class="p-total-count" [countUp]="data.data.global_recovered">0</p>
             </div>   
           </div>
 
