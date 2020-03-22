@@ -1,27 +1,29 @@
 # SlCovid19
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.6.
+This dashboard shows the current status of COVID19 in Sri Lanka and Global.
+Data source is Health Promotion Bureau, Sri Lanka
 
-## Development server
+## Things Show in Dashboard
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Local confirmed COVID-19 cases reported during last 24 hours.
+Total local confirmed COVID-19 cases reported in Sri Lanka.
+Total deaths due to COVID-19 reported in Sri Lanka.
+Total local COVID-19 cases recovered and discharged in Sri Lanka.
+Global confirmed COVID-19 cases reported during last 24 hours.
+Total global confirmed COVID-19 cases.
+Total global deaths due to COVID-19.
+Global deaths due to COVID-19 reported during last 24 hours.
+Total Global COVID-19 cases who recovered
 
-## Code scaffolding
+## Technology
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Angular9
 
-## Build
+## License
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+MIT
 
-## Running unit tests
+## Notes
+Un offical development.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
