@@ -1,0 +1,81 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<div id="team">
+    <!-- Sri Lanka Status-->
+    <div class="panel">
+        <h5 class="section-title h1" style="color: white; text-align: center;
+        padding: 0px 1rem;">COVID19 STATUS - SRI LANKA</h5>
+        <div class="row-1">
+            <!-- Cases -->
+            <div class="c-class">
+                <div class="inner-class">
+                    <img src="/assets/images/cases.png" style="height: 45px; padding: 0px 1rem;">
+                    <h1 style="font-size: 33px;">Cases</h1>
+                    <p class="p-new-count">+{{ data.data.local_new_cases }}</p>
+                </div>
+                <p class="p-total-count">{{ data.data.local_total_cases }}</p>
+            </div>    
+
+            <!-- Deaths -->
+            <div class="d-class">
+                <div class="inner-class">
+                    <img src="/assets/images/death.png" style="height: 45px; padding: 0px 1rem;">
+                    <h1 style="font-size: 33px;">Deaths</h1>
+                    <p class="p-new-count">+{{ data.data.local_new_deaths }}</p>
+                </div>
+                <p class="p-total-count">{{ data.data.local_deaths }}</p>
+            </div> 
+
+            <!-- Rcovered -->
+            <div class="r-class">
+                <div class="inner-class">
+                    <img src="/assets/images/recover.png" style="height: 45px; padding: 0px 1rem;">
+                    <h1 style="font-size: 33px;">Recovered</h1>
+                    <p class="p-new-count"></p>
+                </div>
+                <p class="p-total-count">{{ data.data.local_recovered }}</p>
+            </div>   
+          </div>  
+          <br>
+        <!-- World Status -->
+        <h5 class="section-title h1" style="color: white; text-align: center;
+        padding: 0px 1rem;">COVID19 STATUS - GLOBAL</h5>
+          
+          <div class="row-1">
+            <!-- Cases -->
+            <div class="c-class">
+                <div class="inner-class">
+                    <img src="/assets/images/cases.png" style="height: 45px; padding: 0px 1rem;">
+                    <h1 style="font-size: 33px;">Cases</h1>
+                    <p class="p-new-count">+{{ data.data.global_new_cases }}</p>
+                </div>
+                <p class="p-total-count">{{ data.data.global_total_cases }}</p>
+            </div>    
+
+            <!-- Deaths -->
+            <div class="d-class">
+                <div class="inner-class">
+                    <img src="/assets/images/death.png" style="height: 45px; padding: 0px 1rem;">
+                    <h1 style="font-size: 33px;">Deaths</h1>
+                    <p class="p-new-count">+{{ data.data.global_new_deaths }}</p>
+                </div>
+                <p class="p-total-count">{{ data.data.global_deaths }}</p>
+            </div> 
+
+            <!-- Rcovered -->
+            <div class="r-class">
+                <div class="inner-class">
+                    <img src="/assets/images/recover.png" style="height: 45px; padding: 0px 1rem;">
+                    <h1 style="font-size: 33px;">Recovered</h1>
+                    <p class="p-new-count"></p>
+                </div>
+                <p class="p-total-count">{{ data.data.global_recovered }}</p>
+            </div>   
+          </div>
+
+    </div>
+    <h2 class="section-title h2" style="color: white; text-align: center;">Last Updated : {{ data.data.update_date_time}}</h2>
+    <h5 class="section h3" style="color: white; text-align: center;">Source: <a href="https://www.hpb.health.gov.lk/en">www.hpb.health.gov.lk</a></h5>
+</div>
