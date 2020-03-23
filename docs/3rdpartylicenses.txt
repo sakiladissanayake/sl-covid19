@@ -23,6 +23,9 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 
+@angular/animations
+MIT
+
 @angular/common
 MIT
 
@@ -109,6 +112,9 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 
 ngx-countup
+MIT
+
+ngx-spinner
 MIT
 
 regenerator-runtime
