@@ -18,7 +18,6 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
     this.spinner.show();
     this.dataService.getData().subscribe((data: any[]) => {
-      console.log(data);
       this.data = data;
       this.spinner.hide();
     });

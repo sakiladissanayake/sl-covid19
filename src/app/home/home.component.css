@@ -23,40 +23,56 @@
     justify-content: center;
 }
 
-.c-class {
-    width: 350px;
+.t-class {
+    width: 300px;
     display: flex;
     flex-direction: column;
     -webkit-box-align: center;
     align-items: center;
     box-shadow: rgba(0, 0, 0, 0.14) 0px 1px 2px 0px;
+    border-radius: 8px;
     margin: 1rem;
-    background: linear-gradient(90deg,rgb(220, 235, 11), rgb(255, 196, 0));
+    background: #007bff;
+    color: white;    
+}
+
+.c-class {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.14) 0px 1px 2px 0px;
+    border-radius: 8px;
+    margin: 1rem;
+    background: #ffc107;
     color: white;    
 }
 
 .d-class {
-    width: 350px;
+    width: 300px;
     display: flex;
     flex-direction: column;
     -webkit-box-align: center;
     align-items: center;
     box-shadow: rgba(0, 0, 0, 0.14) 0px 1px 2px 0px;
+    border-radius: 8px;
     margin: 1rem;
-    background: linear-gradient(90deg,rgb(236, 58, 58), rgb(170, 20, 6));
+    background: #dc3545;
     color: white;    
 
 }
 
 .r-class {
-    width: 350px;
+    width: 300px;
     display: flex;
     flex-direction: column;
     -webkit-box-align: center;
     align-items: center;
     box-shadow: rgba(0, 0, 0, 0.14) 0px 1px 2px 0px;
+    border-radius: 8px;
     margin: 1rem;
-    background:  linear-gradient(90deg,rgb(58, 236, 147), rgb(8, 214, 53));
+    background:  #28a745;
     color: white;    
 
 }
@@ -65,6 +81,7 @@
     display: flex;
     -webkit-box-align: center;
     align-items: center;
+    width: 80%;
     border-bottom: 1px solid;
 }
 
@@ -129,4 +146,20 @@ section .section-title {
 
 .frontside .card .card-title{
     color: #ffffff !important;
+}
+
+.h-class {
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    border-width: 1px;
+    border-style: solid;
+    border-color: initial;
+    border-image: initial;
+    padding: 1rem;
+    border-radius: 6px;
+    margin: 1rem;
 }

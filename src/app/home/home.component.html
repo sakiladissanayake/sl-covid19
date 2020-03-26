@@ -6,24 +6,34 @@
     <!-- Sri Lanka Status-->
     <div class="panel">
         <h5 class="section-title h1" style="color: white; text-align: center;
-        padding: 0px 2rem; padding-top: 15px;">COVID19 STATUS - SRI LANKA</h5>
+        padding: 0px 2rem; padding-top: 20px;">COVID19 STATUS - SRI LANKA</h5>
         <div class="row-1">
+             <!-- Total Cases -->
+             <div class="t-class">
+                <div class="inner-class">
+                    <img src="./assets/images/case.png" style="height: 45px; padding: 0px 1rem;">
+                    <h1 style="font-size: 26px;">Total Cases</h1>
+                    <!-- <p class="p-new-count"></p> -->
+                </div>
+                <p class="p-total-count" [countUp]="data.data.local_total_cases">0</p>
+            </div>  
+
             <!-- Cases -->
             <div class="c-class">
                 <div class="inner-class">
                     <img src="./assets/images/cases.png" style="height: 45px; padding: 0px 1rem;">
-                    <h1 style="font-size: 33px;">Cases</h1>
-                    <p class="p-new-count">+{{ data.data.local_new_cases }}</p>
+                    <h1 style="font-size: 26px;">Active Cases</h1>
+                    <!-- <p class="p-new-count">+{{ data.data.local_new_cases }}</p> -->
                 </div>
-                <p class="p-total-count" [countUp]="data.data.local_total_cases">0</p>
+                <p class="p-total-count" [countUp]="data.data.local_active_cases">0</p>
             </div>    
 
             <!-- Deaths -->
             <div class="d-class">
                 <div class="inner-class">
                     <img src="./assets/images/death.png" style="height: 45px; padding: 0px 1rem;">
-                    <h1 style="font-size: 33px;">Deaths</h1>
-                    <p class="p-new-count">+{{ data.data.local_new_deaths }}</p>
+                    <h1 style="font-size: 26px;">Deaths</h1>
+                    <!-- <p class="p-new-count">+{{ data.data.local_new_deaths }}</p> -->
                 </div>
                 <p class="p-total-count" [countUp]="data.data.local_deaths">0</p>
             </div> 
@@ -32,12 +42,15 @@
             <div class="r-class">
                 <div class="inner-class">
                     <img src="./assets/images/recover.png" style="height: 45px; padding: 0px 1rem;">
-                    <h1 style="font-size: 33px;">Recovered</h1>
-                    <p class="p-new-count"></p>
+                    <h1 style="font-size: 26px;">Recovered</h1>
+                    <!-- <p class="p-new-count"></p> -->
                 </div>
                 <p class="p-total-count" [countUp]="data.data.local_recovered">0</p>
             </div>   
-          </div>  
+          </div> 
+          <!-- <div class="h-class">
+            <h1 style="font-size: 26px;color: white; text-align: center;">Total Individuals in Hospitals: <span [countUp]="data.data.local_total_number_of_individuals_in_hospitals">0</span></h1>
+          </div> -->
 
         <!-- World Status -->
         <h5 class="section-title h1" style="color: white; text-align: center;
@@ -48,8 +61,8 @@
             <div class="c-class">
                 <div class="inner-class">
                     <img src="./assets/images/cases.png" style="height: 45px; padding: 0px 1rem;">
-                    <h1 style="font-size: 33px;">Cases</h1>
-                    <p class="p-new-count">+{{ data.data.global_new_cases }}</p>
+                    <h1 style="font-size: 26px;">Cases</h1>
+                    <!-- <p class="p-new-count">+{{ data.data.global_new_cases }}</p> -->
                 </div>
                 <p class="p-total-count" [countUp]="data.data.global_total_cases">0</p>
             </div>    
@@ -58,8 +71,8 @@
             <div class="d-class">
                 <div class="inner-class">
                     <img src="./assets/images/death.png" style="height: 45px; padding: 0px 1rem;">
-                    <h1 style="font-size: 33px;">Deaths</h1>
-                    <p class="p-new-count">+{{ data.data.global_new_deaths }}</p>
+                    <h1 style="font-size: 26px;">Deaths</h1>
+                    <!-- <p class="p-new-count">+{{ data.data.global_new_deaths }}</p> -->
                 </div>
                 <p class="p-total-count" [countUp]="data.data.global_deaths">0</p>
             </div> 
@@ -68,8 +81,8 @@
             <div class="r-class">
                 <div class="inner-class">
                     <img src="./assets/images/recover.png" style="height: 45px; padding: 0px 1rem;">
-                    <h1 style="font-size: 33px;">Recovered</h1>
-                    <p class="p-new-count"></p>
+                    <h1 style="font-size: 26px;">Recovered</h1>
+                    <!-- <p class="p-new-count"></p> -->
                 </div>
                 <p class="p-total-count" [countUp]="data.data.global_recovered">0</p>
             </div>   
